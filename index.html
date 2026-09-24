@@ -1,0 +1,687 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>💫sizon💫</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="background">
+    <div class="glow one"></div>
+    <div class="glow two"></div>
+</div>
+
+<header class="topbar">
+
+    <div class="brand">
+
+        <div class="brand-logo">
+            <i data-lucide="sparkles"></i>
+        </div>
+
+        <div>
+            <h2>فكرتك</h2>
+            <span>حوّل فكرتك لحقيقة</span>
+        </div>
+
+    </div>
+
+    <button class="profile-mini" onclick="showPage('profile')">
+
+        <!-- صورة البروفايل الصغيرة -->
+        <img src="bv.png" alt="البروفايل">
+
+    </button>
+
+</header>
+
+
+<main>
+
+<!-- ================= الرئيسية ================= -->
+
+<section id="home" class="page active">
+
+    <div class="hero">
+
+        <div class="hero-text">
+
+            <div class="badge">
+                <i data-lucide="zap"></i>
+                منصة صناعة الأفكار
+            </div>
+
+            <h1>
+                فكرتك تبدأ هنا
+                <br>
+                <span>وحقيقتها تبدأ معنا.</span>
+            </h1>
+
+            <p>
+                مكان واحد يساعدك على تنظيم أفكارك،
+                بناء مشاريعك وتطوير مهاراتك.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="main-btn" onclick="openIdea()">
+                    <i data-lucide="rocket"></i>
+                    ابدأ فكرتك
+                </button>
+
+                <button class="outline-btn" onclick="showPage('projects')">
+                    مشاريعي
+                    <i data-lucide="arrow-left"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- مكان صورة رئيسية -->
+        <div class="hero-image">
+
+            <img src="bu.png" alt="الصورة الرئيسية">
+
+            <div class="image-label">
+                <span>فكرتك</span>
+                <strong>ابدأ الآن 🚀</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- الإحصائيات -->
+
+    <div class="stats">
+
+        <div class="stat">
+            <i data-lucide="lightbulb"></i>
+            <strong>+1200</strong>
+            <span>فكرة</span>
+        </div>
+
+        <div class="stat">
+            <i data-lucide="folder-kanban"></i>
+            <strong>+350</strong>
+            <span>مشروع</span>
+        </div>
+
+        <div class="stat">
+            <i data-lucide="users"></i>
+            <strong>+5000</strong>
+            <span>مستخدم</span>
+        </div>
+
+        <div class="stat">
+            <i data-lucide="rocket"></i>
+            <strong>+850</strong>
+            <span>إنجاز</span>
+        </div>
+
+    </div>
+
+
+    <!-- معرض الصور -->
+
+    <div class="section-head">
+
+        <div>
+            <span>YOUR SPACE</span>
+            <h2>مساحتك الإبداعية</h2>
+        </div>
+
+        <p>أضف صورك ومشاريعك هنا</p>
+
+    </div>
+
+
+    <div class="gallery">
+
+        <!-- صورة 1 -->
+        <div class="gallery-card big">
+            <img src="yu.png" alt="صورة">
+            <div>
+                <h3>مشروعك القادم</h3>
+                <span>كل فكرة تستحق فرصة</span>
+            </div>
+        </div>
+
+        <!-- صورة 2 -->
+        <div class="gallery-card">
+            <img src="nq.png" alt="صورة">
+            <div>
+                <h3>إبداعك</h3>
+                <span>اصنع شيئاً مختلفاً</span>
+            </div>
+        </div>
+
+        <!-- صورة 3 -->
+        <div class="gallery-card">
+            <img src="uy.jpg" alt="صورة">
+            <div>
+                <h3>طريقك</h3>
+                <span>خطوة وراء خطوة</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ماذا تريد -->
+
+    <div class="section-head">
+
+        <div>
+            <span>START HERE</span>
+            <h2>ماذا تريد أن تفعل؟</h2>
+        </div>
+
+    </div>
+
+
+    <div class="quick-grid">
+
+        <div class="quick-card" onclick="showPage('ideas')">
+
+            <div class="quick-icon purple">
+                <i data-lucide="lightbulb"></i>
+            </div>
+
+            <h3>لدي فكرة</h3>
+            <p>حوّل فكرتك إلى خطة واضحة.</p>
+
+        </div>
+
+
+        <div class="quick-card" onclick="showPage('tools')">
+
+            <div class="quick-icon blue">
+                <i data-lucide="wrench"></i>
+            </div>
+
+            <h3>أريد أدوات</h3>
+            <p>استخدم أدوات تساعدك في التنفيذ.</p>
+
+        </div>
+
+
+        <div class="quick-card" onclick="showPage('projects')">
+
+            <div class="quick-icon green">
+                <i data-lucide="folder-kanban"></i>
+            </div>
+
+            <h3>مشاريعي</h3>
+            <p>تابع مشاريعك وأعمالك.</p>
+
+        </div>
+
+
+        <div class="quick-card" onclick="showPage('learn')">
+
+            <div class="quick-icon orange">
+                <i data-lucide="graduation-cap"></i>
+            </div>
+
+            <h3>أريد التعلم</h3>
+            <p>طوّر مهاراتك وتعلم الجديد.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= الأفكار ================= -->
+
+<section id="ideas" class="page">
+
+    <div class="page-head">
+
+        <div>
+            <span>IDEAS</span>
+            <h1>أفكاري</h1>
+        </div>
+
+        <button class="small-btn" onclick="openIdea()">
+            <i data-lucide="plus"></i>
+            فكرة جديدة
+        </button>
+
+    </div>
+
+
+    <div class="idea-hero">
+
+        <div class="idea-icon">
+            <i data-lucide="brain-circuit"></i>
+        </div>
+
+        <h2>عندك فكرة؟</h2>
+
+        <p>
+            اكتب فكرتك مهما كانت بسيطة،
+            وحولها إلى خطوات منظمة.
+        </p>
+
+        <button class="main-btn" onclick="openIdea()">
+            ابدأ الآن
+        </button>
+
+    </div>
+
+
+    <div class="idea-list">
+
+        <div class="idea-item">
+
+            <div class="idea-item-icon">
+                <i data-lucide="lightbulb"></i>
+            </div>
+
+            <div>
+                <h3>فكرة مشروعي الأول</h3>
+                <span>تم إنشاؤها مؤخراً</span>
+            </div>
+
+            <i data-lucide="chevron-left"></i>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= الأدوات ================= -->
+
+<section id="tools" class="page">
+
+    <div class="page-head">
+
+        <div>
+            <span>TOOLS</span>
+            <h1>الأدوات</h1>
+        </div>
+
+    </div>
+
+
+    <div class="tools-grid">
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                <i data-lucide="brain"></i>
+            </div>
+
+            <h3>مولد الأفكار</h3>
+            <p>اكتشف أفكاراً جديدة لمشاريعك.</p>
+
+            <button>فتح الأداة</button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                <i data-lucide="list-checks"></i>
+            </div>
+
+            <h3>منظم المشروع</h3>
+            <p>قسم مشروعك إلى مهام سهلة.</p>
+
+            <button>فتح الأداة</button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                <i data-lucide="code-2"></i>
+            </div>
+
+            <h3>محرر الأكواد</h3>
+            <p>اكتب وجرب أكوادك بسهولة.</p>
+
+            <button>فتح الأداة</button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+            <div class="tool-icon">
+                <i data-lucide="palette"></i>
+            </div>
+
+            <h3>تصميم الواجهة</h3>
+            <p>خطط لشكل موقعك قبل البرمجة.</p>
+
+            <button>فتح الأداة</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= المشاريع ================= -->
+
+<section id="projects" class="page">
+
+    <div class="page-head">
+
+        <div>
+            <span>PROJECTS</span>
+            <h1>مشاريعي</h1>
+        </div>
+
+        <button class="small-btn">
+            <i data-lucide="plus"></i>
+            مشروع جديد
+        </button>
+
+    </div>
+
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <!-- صورة المشروع -->
+            <div class="project-image">
+
+                <img src="images/project1.jpg" alt="المشروع">
+
+                <span>قيد التطوير</span>
+
+            </div>
+
+            <div class="project-body">
+
+                <h3>مشروعي الأول</h3>
+
+                <p>
+                    مشروع جديد أعمل عليه حالياً.
+                </p>
+
+                <div class="progress">
+                    <div></div>
+                </div>
+
+                <div class="project-bottom">
+                    <span>التقدم</span>
+                    <strong>65%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <!-- صورة المشروع -->
+            <div class="project-image">
+
+  <img src="kl.png" alt="المشروع">
+
+                <span>جديد</span>
+
+            </div>
+
+            <div class="project-body">
+
+                <h3>مشروع جديد</h3>
+
+                <p>
+                    أضف مشروعك الثاني هنا.
+                </p>
+
+                <div class="progress">
+                    <div style="width:30%"></div>
+                </div>
+
+                <div class="project-bottom">
+                    <span>التقدم</span>
+                    <strong>30%</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= التعلم ================= -->
+
+<section id="learn" class="page">
+
+    <div class="page-head">
+
+        <div>
+            <span>LEARN</span>
+            <h1>التعلم</h1>
+        </div>
+
+    </div>
+
+
+    <div class="course-grid">
+
+        <div class="course-card">
+
+            <div class="course-number">01</div>
+
+            <h3>أساسيات البرمجة</h3>
+
+            <p>
+                ابدأ تعلم البرمجة من الصفر.
+            </p>
+
+            <button>ابدأ التعلم</button>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-number">02</div>
+
+            <h3>تصميم المواقع</h3>
+
+            <p>
+                تعلم HTML و CSS وبناء المواقع.
+            </p>
+
+            <button>ابدأ التعلم</button>
+
+        </div>
+
+
+        <div class="course-card">
+
+            <div class="course-number">03</div>
+
+            <h3>JavaScript</h3>
+
+            <p>
+                اجعل مواقعك تفاعلية وحية.
+            </p>
+
+            <button>ابدأ التعلم</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= الحساب ================= -->
+
+<section id="profile" class="page">
+
+    <div class="profile-cover">
+
+        <!-- صورة الغلاف -->
+        <img src="uy.jpg" alt="صورة الغلاف">
+
+    </div>
+
+
+    <div class="profile-card">
+
+        <!-- صورة البروفايل -->
+        <div class="profile-image">
+
+            <img src="bg.jpg" alt="صورة البروفايل">
+
+        </div>
+
+        <h1>زوز</h1>
+
+        <p>صانع أفكار ومشاريع 🚀</p>
+
+
+        <div class="profile-buttons">
+
+            <button>
+                <i data-lucide="edit-3"></i>
+                تعديل الحساب
+            </button>
+
+            <button>
+                <i data-lucide="settings"></i>
+                الإعدادات
+            </button>
+
+        </div>
+
+
+        <div class="profile-stats">
+
+            <div>
+                <strong>12</strong>
+                <span>أفكار</span>
+            </div>
+
+            <div>
+                <strong>5</strong>
+                <span>مشاريع</span>
+            </div>
+
+            <div>
+                <strong>18</strong>
+                <span>مهام</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= نافذة الفكرة ================= -->
+
+<div class="modal" id="ideaModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeIdea()">×</button>
+
+        <div class="modal-icon">
+            <i data-lucide="lightbulb"></i>
+        </div>
+
+        <h2>احكي لنا فكرتك</h2>
+
+        <p>
+            اكتب فكرتك وسنحولها إلى خطوات واضحة.
+        </p>
+
+        <textarea
+            id="ideaInput"
+            placeholder="اكتب فكرتك هنا..."
+        ></textarea>
+
+        <button class="main-btn full" onclick="saveIdea()">
+            <i data-lucide="sparkles"></i>
+            إنشاء الخطة
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= الشريط السفلي ================= -->
+
+<nav class="bottom-nav">
+
+    <button class="nav-item active" onclick="showPage('home',this)">
+        <i data-lucide="home"></i>
+        <span>الرئيسية</span>
+    </button>
+
+    <button class="nav-item" onclick="showPage('ideas',this)">
+        <i data-lucide="lightbulb"></i>
+        <span>الأفكار</span>
+    </button>
+
+    <button class="nav-item center" onclick="openIdea()">
+
+        <div class="add-button">
+            <i data-lucide="plus"></i>
+        </div>
+
+        <span>جديد</span>
+
+    </button>
+
+    <button class="nav-item" onclick="showPage('tools',this)">
+        <i data-lucide="wrench"></i>
+        <span>الأدوات</span>
+    </button>
+
+    <button class="nav-item" onclick="showPage('profile',this)">
+        <i data-lucide="user"></i>
+        <span>حسابي</span>
+    </button>
+
+</nav>
+
+
+<div class="toast" id="toast">
+    تم حفظ فكرتك بنجاح ✨
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
